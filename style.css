@@ -4,12 +4,20 @@
   box-sizing: border-box;
   transition: 0.5s;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1 1 auto;
+}
 section {
   padding: 0px 10px;
 }
 header {
   position: fixed;
-  background: linear-gradient(#5B483A 100%, #262425 100%, #211F20);
+  background: linear-gradient(to right, #5B483A, #262425, #211F20);
   top: 0px;
   padding: 30px 10px;
   left: 0;
@@ -43,7 +51,7 @@ header > .logo > .logo_subtitle {
   display: flex;
   flex-direction: column;
   align-items: end;
-  background: linear-gradient(#5B483A 100%, #262425 100%, #211F20);
+  background: linear-gradient(to right, #5B483A, #262425, #211F20);
 }
 #hero > .content {
   text-align: center;
@@ -114,11 +122,11 @@ header > .logo > .logo_subtitle {
   height: 353.6px;
 }
 @media (min-width: 768px) and (max-width: 1280px) {
-  body {
-    padding: 30px 30px 0px;
+  section {
+    padding: 0px 30px;
   }
   header {
-    padding: 0px;
+    padding: 30px;
   }
   header > img {
     display: none;
@@ -161,6 +169,41 @@ header > .logo > .logo_subtitle {
     width: 100%;
     height: 2px;
     background-color: #F1CDB3;
+  }
+  #hero {
+    width: 100%;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #hero > .content {
+    margin-bottom: 100px;
+    width: 460px;
+  }
+  #hero > .content > h1 {
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 56.2px;
+    letter-spacing: 6%;
+    color: #FFFFFF;
+    width: 75%;
+    margin: 0px 0px 42px;
+    text-align: left;
+  }
+  #hero > .content > p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #CDCDCD;
+    margin-bottom: 42px;
+    text-align: left;
+  }
+  #hero > img {
+    align-self: end;
+    width: 569px;
+    height: 593px;
   }
   #about_us {
     width: 437px;
@@ -185,11 +228,11 @@ header > .logo > .logo_subtitle {
   }
 }
 @media (min-width: 1280px) {
-  body {
-    padding: 40px 40px 0px;
+  section {
+    padding: 0px 40px;
   }
   header {
-    padding: 0px;
+    padding: 40px;
   }
   header > img {
     display: none;
@@ -232,6 +275,40 @@ header > .logo > .logo_subtitle {
     width: 100%;
     height: 2px;
     background-color: #F1CDB3;
+  }
+  #hero {
+    width: 100%;
+    padding-top: 180px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #hero > .content {
+    margin-bottom: 100px;
+    width: 460px;
+    text-align: left;
+  }
+  #hero > .content > h1 {
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 56.2px;
+    letter-spacing: 6%;
+    color: #FFFFFF;
+    width: 75%;
+    margin: 0px 0px 42px;
+  }
+  #hero > .content > p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #CDCDCD;
+    margin-bottom: 42px;
+  }
+  #hero > img {
+    width: 569px;
+    height: 593px;
   }
   #about_us {
     width: 100%;
