@@ -23,16 +23,20 @@
     color: @clr;
 }
             
-    body{
-        padding: 30px 10px 0px;
-    }
+section{
+    padding: 0px 10px;
+}
 
     header{
-        background: @color_dark;
+        position: fixed;
+        background: linear-gradient(#5B483A 100%,#262425 100%, #211F20);
+        top: 0px;
+        padding: 30px 10px;
+        left: 0;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0px 10px;
         >nav{
             display: none;
         }
@@ -45,6 +49,40 @@
                 .func_styling_text(13px,400,14.95px,10%,@color-light-xl);
                 margin-left: 4px;
             }
+        }
+    }
+
+    #hero{
+        width: 100%;
+        padding-top: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        background: linear-gradient(#5B483A 100%,#262425 100%, #211F20);
+        >.content{
+            text-align: center;
+            margin-bottom: 105px;
+            >h1{
+               .func_styling_text(25px, 400, 32.5px, 6%, @color-light-xl);
+                width: 50%;
+                margin: 0px auto 42px;
+            }
+            >p{
+                .func_styling_text(15px, 400, 24px, 0px, @color_dark_secondary);
+                margin-bottom: 42px;
+            }
+            >button{
+                border-radius: 100px;
+                border: none;
+                outline: none;
+                padding: 15px 45px;
+                background-color: @color_primary;
+                .func_styling_text(17px, 400, 22.1px, 6%, #292929);
+            }
+        }
+        >img{
+            width: 260px;
+            height: 271.77px;
         }
     }
 
