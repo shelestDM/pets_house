@@ -147,12 +147,7 @@ header > .logo > .logo_subtitle {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-self: center;
   gap: 20px;
-}
-#help > .help_options_wrapper > .help_option > img {
-  width: 50px;
-  height: 50px;
 }
 #help > .help_options_wrapper > .help_option > p {
   font-size: 15px;
@@ -266,6 +261,39 @@ header > .logo > .logo_subtitle {
     width: 300px;
     height: 408px;
   }
+  #help {
+    padding: 80px 0px 100px;
+  }
+  #help > h4 {
+    width: 308px;
+    margin: 0px auto 60px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45.5px;
+    letter-spacing: 6%;
+    color: #545454;
+  }
+  #help > .help_options_wrapper {
+    width: 630px;
+    margin: auto;
+    gap: 55px 60px;
+  }
+  #help > .help_options_wrapper > .help_option {
+    width: 170px;
+    gap: 30px;
+  }
+  #help > .help_options_wrapper > .help_option > img {
+    width: 60px;
+    height: 60px;
+  }
+  #help > .help_options_wrapper > .help_option > p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 6%;
+    color: #545454;
+  }
 }
 @media (min-width: 1280px) {
   section {
@@ -367,5 +395,39 @@ header > .logo > .logo_subtitle {
   #about_us > img {
     width: 300px;
     height: 408px;
+  }
+  #help {
+    padding: 80px 0px 100px;
+  }
+  #help > h4 {
+    width: 308px;
+    margin: 0px auto 60px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45.5px;
+    letter-spacing: 6%;
+    color: #545454;
+  }
+  #help > .help_options_wrapper {
+    min-width: 1026px;
+    margin: auto;
+    gap: 120px;
+    justify-content: center;
+  }
+  #help > .help_options_wrapper > .help_option {
+    width: fit-content;
+    gap: 30px;
+  }
+  #help > .help_options_wrapper > .help_option > img {
+    width: 60px;
+    height: 60px;
+  }
+  #help > .help_options_wrapper > .help_option > p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 6%;
+    color: #545454;
   }
 }
