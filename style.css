@@ -121,6 +121,46 @@ header > .logo > .logo_subtitle {
   width: 260px;
   height: 353.6px;
 }
+#help {
+  padding: 42px 15px;
+}
+#help > h4 {
+  width: 220px;
+  margin: 0px auto 42px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 32.5px;
+  letter-spacing: 6%;
+  color: #545454;
+}
+#help > .help_options_wrapper {
+  width: 290px;
+  margin: auto;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+#help > .help_options_wrapper > .help_option {
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  gap: 20px;
+}
+#help > .help_options_wrapper > .help_option > img {
+  width: 50px;
+  height: 50px;
+}
+#help > .help_options_wrapper > .help_option > p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16.5px;
+  letter-spacing: 6%;
+  color: #545454;
+}
 @media (min-width: 768px) and (max-width: 1280px) {
   section {
     padding: 0px 30px;

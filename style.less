@@ -23,6 +23,10 @@
     color: @clr;
 }
         
+.element_size(@wdth, @hght){
+    width: @wdth;
+    height: @hght;
+}
 body{
     display: flex;
     flex-direction: column;
@@ -115,6 +119,38 @@ section{
         >img{
             width: 260px;
             height: 353.6px;
+        }
+    }
+
+    #help{
+        padding: 42px 15px;
+        >h4{
+            width: 220px;
+            margin: 0px auto 42px;
+            text-align: center;
+            .func_styling_text(25px, 400, 32.5px, 6%, @color_dark_light)
+        }
+        >.help_options_wrapper{
+            width: 290px;
+            margin: auto;
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            >.help_option{
+                width: 130px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-self: center;
+                gap: 20px;
+                >img{
+                    .element_size(50px, 50px);
+                }
+                >p{
+                    .func_styling_text(15px, 400, 16.5px, 6%, @color_dark_light);
+                }
+            }
         }
     }
 
