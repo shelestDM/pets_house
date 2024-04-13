@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.25s;
+    font-family: monospace;
+    color: blue;
+}
+:root{
+    --cell_size: 35px;
+    --player_one_ship_color: orange;
+    --player_two_ship_color: red;
+}
+body{
+    position: relative;
+    z-index: 10;
+}
+.header{
+    text-align: center;
+    font-family: monospace;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+#player_one_board>.player_one_ship{
+    background-color: var(--player_one_ship_color);
+}
+#player_two_board>.player_two_ship{
+    background-color: var(--player_two_ship_color);
+}
+
+.miss{
+    position: relative;
+}
+.miss::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: rgb(121, 114, 114);
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#player_one_board,
+#player_two_board{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(var(--cell_size)*10);
+}
+
+#player_one_board>div,
+#player_two_board>div{
+    border:1px solid black;
+    width: var(--cell_size);
+    height: var(--cell_size);
+    display: grid;
+    place-items: center;
+}
+
+#board{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+
+@media (min-width: 768px) {
+    #board{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 150px;
+    }
+}
+
+
+.hit{
+    background:linear-gradient(black, red);
+}
+
+#modal{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    left: 0;
+    background-color: rgba(83, 83, 83);
+    animation: smoth_appear 3s linear 1 forwards;
+    display: none;
+}
+
+
+@keyframes smoth_appear {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+#turn{
+    text-align: center; font-size: 22px; margin-top: 30px;
+}
